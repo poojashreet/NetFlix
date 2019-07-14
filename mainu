@@ -1,0 +1,23 @@
+package assign;
+
+import java.util.Scanner;
+
+public class main454 {
+	public static void main(String[] args)
+	{
+		System.out.println("started");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter ur name");
+		String name;
+		name=sc.next();
+		System.out.println("enter type");
+		char ch=sc.next().charAt(0);
+		System.out.println("enter days");
+		int wc;
+		wc=sc.nextInt();
+		Netflix ref=Manager.createPremium(name,111,9000,ch);
+		ref.payment(12356);
+		ref.check(wc);
+	}
+
+}
